@@ -1,0 +1,35 @@
+h1{
+    color: blue;
+}
+
+h2{
+    color: rgb(250, 2, 2);
+}
+
+.alumnos{
+    color: green;
+}
+
+table{
+    color: #000;
+    border: 5px solid #000;
+    border-collapse: collapse;
+  width: 100%;
+}
+
+.tablita {
+    color: #000;
+    border: 1px solid rgb(222, 222, 222);
+    width: 100%;
+    background-color: aliceblue;
+  
+
+}
+
+td,tr{
+    border: 2px rgb(164, 164, 164) ;
+
+}
+th{font-weight:bold;
+
+}
