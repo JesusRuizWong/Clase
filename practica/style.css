@@ -1,6 +1,7 @@
 .body{
-    display: flex;
+    
     align-items: center;
+    align-content: center;
     justify-content: center;
     color: rgb(55, 55, 55);
     text-align: center;
@@ -11,30 +12,36 @@
 }
 
 .profile{
-    border: 10px solid darkblue;
-    padding: 10px;
-    width: 40%;
-    border-radius: 5%;
+    
+    padding: 5px;
+    width: 25%;
+    border-radius: 10%;
+    transition: all 0.5s;
 }
 
+.profile:hover{
+    border-radius: 75%;
+    transform: scale(1.10);
+}
 .article-1{
 
     letter-spacing: 1.5px;
     margin: auto;
 
 
+
 }
 .redes{
-    
-    width: 50%;
- 
+    padding: 10px;
+  
 }
 .icon{
 
-    display: flex;
     transition: all 0.5s;
     max-width: 3rem;
     margin-top: 2rem;
+    margin-left: 2rem;
+
  
 }
 .icon:hover{
@@ -50,7 +57,15 @@
 }
 
 
-h1,h2{
+h2{
     text-align: center;
-}
 
+}
+.name{
+    font-size: 2rem ;
+    transition: all 0.5s;
+   
+}
+.name:hover{
+    color: rgb(0, 121, 197);
+}
