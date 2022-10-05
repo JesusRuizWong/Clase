@@ -1,0 +1,56 @@
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(55, 55, 55);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+    background-image: url("./src/hand-painted-watercolor-background-with-sky-and-clouds-shape.jpg");
+    background-size: cover;
+}
+
+.profile{
+    border: 10px solid darkblue;
+    padding: 10px;
+    width: 40%;
+    border-radius: 5%;
+}
+
+.article-1{
+
+    letter-spacing: 1.5px;
+    margin: auto;
+
+
+}
+.redes{
+    
+    width: 50%;
+ 
+}
+.icon{
+
+    display: flex;
+    transition: all 0.5s;
+    max-width: 3rem;
+    margin-top: 2rem;
+ 
+}
+.icon:hover{
+
+    transform: scale(1.5);
+}
+
+
+.firma{
+    margin-top: 4rem;
+    text-align: center;
+    justify-content: center;
+}
+
+
+h1,h2{
+    text-align: center;
+}
+
