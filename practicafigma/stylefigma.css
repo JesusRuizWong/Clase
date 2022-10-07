@@ -55,19 +55,31 @@ body {
 
 .main-content {
 	background: white;
-   
+
+
 
 }
 
 	.main-content header,
 	.main-content .content 
     {
-		padding: 0.5rem;
-        padding-left: 2rem;
+        padding: 2rem;
+    }
  
-     
+     .d-content {
+
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+          
+     }
       
-	}
+	 
+    img {
+        max-width: 100%;
+        height: auto;
+        padding: 1%;
+      }
 
 .form {
     width: 95%;
@@ -118,7 +130,9 @@ body {
       }
       
       .submit {
-        width: 20%;
+        width: 50%;
+        max-width: auto;
+        color: rgb(255, 255, 255);
         background-color: #00AF1C;
 
         outline:none;
