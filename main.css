@@ -1,16 +1,28 @@
+:root,
+:root.light {
+    --primary: rgba(225, 225, 225, 0.922);
+    --text-color: #123;
+  }
+   
+  :root.dark {
+    --primary: #121212;
+    --text-color: #45ADFE;
+  }
+  
+
 body {
 	margin: 0;
 	padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #666;
-	background: #f2f2f2; 
+	background: var(--bg-color); 
 	font-size: 1em;
 	line-height: 1.5em;
     text-align: justify;
 }
 
 .main-header {
-	background: #00AF1C;
+	background: var(--primary);
 	color: white;
     height: 99px;
     width: 100%;
@@ -22,7 +34,7 @@ body {
 
 	.main-header a {
 		color: white;
-        background: #00AF1C;
+        
 	}
 
     .logo-header {
@@ -66,7 +78,9 @@ body {
 	.main-content header,
 	.main-content .content 
     {
-        padding: 2rem;
+        padding-top: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
         
     }
  
@@ -211,3 +225,21 @@ body {
         background-color: #f1f1f1;
         border-radius: 30%;
     }                        
+
+
+
+    .theme-btn {
+        width: 3em;
+        height: 3em;
+        padding: 0.5em;
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+      }
+       
+      .theme-btn img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
