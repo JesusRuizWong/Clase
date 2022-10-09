@@ -1,14 +1,48 @@
-:root,
+/* Estándar de temas */
+:root, 
 :root.light {
-    --primary: rgba(225, 225, 225, 0.922);
+    --primary: rgba(0, 67, 176, 0.922);
+    --secondary: rgba(0, 57, 150, 0.922);
     --text-color: #123;
+    --esbackground: linear-gradient(rgba(126,213,111,0.8), rgba(40,180,131,0.8) ); 
   }
    
   :root.dark {
-    --primary: #121212;
+    --primary: #121212de;
+    --secondary: rgba(0, 10, 27, 0.922);
     --text-color: #45ADFE;
+  }  
+  
+
+/* Tema de pagina */
+  .theme-btn {
+    width: 3em;
+    height: 3em;
+    padding: 0.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+   
+  .theme-btn img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .theme-btn.light {
+    display: none;
   }
   
+  .dark .theme-btn.dark {
+    display: none;
+  }
+  .dark .theme-btn.light {
+    display: block;
+  }
+
+
 
 body {
 	margin: 0;
@@ -18,18 +52,18 @@ body {
 	background: var(--bg-color); 
 	font-size: 1em;
 	line-height: 1.5em;
-    text-align: justify;
+    text-align: justify;   
+    width: 100%;
 }
 
 .main-header {
+    width: 100%;
 	background: var(--primary);
 	color: white;
     height: 99px;
     width: 100%;
     position: fixed;
     top: 0;
-
-
 }	
 
 	.main-header a {
@@ -68,11 +102,67 @@ body {
                     nav ul li a:hover {
                         background: #0ba649;
                     }
+.main-banner {
+    background: var(--secondary);
+    margin-top: 99px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+                  
+}
+
+.main-banner img{
+    width: 40%;
+    min-width: 300px;
+    border-radius:60% ;
+    margin-left: 2%;
+
+}
+.main-banner h1{
+   color: rgb(255, 255, 255);
+   font-size: 1.5rem  ;
+   margin-left: 2%;
+}
+.lineas{
+    text-align: center;
+    width: 0 ;
+    margin: auto;
+    font-size: 1.5rem ;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    transform: translateY(-60%);
+    overflow: hidden;
+
+}
+.texto-animado{
+      animation: texto-animado 5s steps(130) 1s normal both,
+      cursor 0.5s steps(130) infinite normal;
+      animation-iteration-count: 10s;
+}
+
+@keyframes texto-animado{
+    from{
+        width: 0;
+    }
+    to{
+        width: 500px;
+    }
+}
+
+@keyframes cursor{
+    from{
+        border-right-color: red;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+ 
 
 .main-content {
 	background: white;
-    margin-top: 99px;
-
+    
 }
 
 	.main-content header,
@@ -177,7 +267,7 @@ body {
 
 
 .main-footer {
-   	background: #0003ce;
+   	background: var(--primary);
 	color: white;
 	text-align: center;
     display:block;
@@ -187,12 +277,12 @@ body {
 	.itemfooter-2 p {
         /* margin-left: 2rem;
 		margin-right: 2rem; */
-        margin-inline: 2rem;
-        font-size: 0.85rem;
+        margin-inline: 5rem;
+        font-size: 0.85rem;    
 	}
 	
 	.itemfooter-2 a {
-		color: white;
+		color: white;   
 	}         
         
     .itemfooter-1{
@@ -202,13 +292,14 @@ body {
         
 
     }
+    
     .itemfooter-2{
 
-        background: #151593;
+        background: var(--secondary);
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin: 0px;
+
     }
 
     .icon {
@@ -225,21 +316,3 @@ body {
         background-color: #f1f1f1;
         border-radius: 30%;
     }                        
-
-
-
-    .theme-btn {
-        width: 3em;
-        height: 3em;
-        padding: 0.5em;
-        border-radius: 50%;
-        cursor: pointer;
-        border: none;
-        background-color: transparent;
-      }
-       
-      .theme-btn img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
