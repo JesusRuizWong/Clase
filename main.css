@@ -182,20 +182,7 @@ body {
     display: none;
   }
   
-  @media only screen and (min-width: 560px) {
-	
-    .nav-toggle {
-      display: none;
-    }
   
-    .nav-menu {
-      flex-direction: row;
-    }
-  
-    .nav-menu li {
-      display: block;
-    }
-  }
   
 
 /* Parametros del banner*/
@@ -209,21 +196,22 @@ body {
              
 }
 
+.main-banner div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
 .main-banner img{
     width: 25%;
-    min-width: 300px;
-    margin-left: 15%;
-    margin-right: 15%;
+    min-width: 310px;
     margin-top: 5%;
 
 }
 .main-banner h1{
-   
    color: var(--text-color-generico);
    font-size: 1.5rem  ;
-   margin-left: 2%;
-   min-width: 15px;
-   
+  
 }
 .lineas{
     text-align: center;
@@ -430,3 +418,20 @@ body {
         border-radius: 30%;
     }                        
 
+    @media only screen and (min-width: 560px) {
+        .main-banner div{
+            width: 50%;
+        }
+	
+        .nav-toggle {
+          display: none;
+        }
+      
+        .nav-menu {
+          flex-direction: row;
+        }
+      
+        .nav-menu li {
+          display: block;
+        }
+      }
