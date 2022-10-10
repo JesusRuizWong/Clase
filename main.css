@@ -210,17 +210,20 @@ body {
 }
 
 .main-banner img{
-    width: 20%;
-    min-width: 260px;
+    width: 25%;
+    min-width: 300px;
     margin-left: 15%;
-    margin-right: 10%;
+    margin-right: 15%;
     margin-top: 5%;
 
 }
 .main-banner h1{
+   
    color: var(--text-color-generico);
    font-size: 1.5rem  ;
    margin-left: 2%;
+   min-width: 15px;
+   
 }
 .lineas{
     text-align: center;
@@ -241,10 +244,10 @@ body {
 
 @keyframes texto-animado{
     from{
-        width: 0;
+        width: 15px;
     }
     to{
-        width: 500px;
+        width: 400px;
     }
 }
 
