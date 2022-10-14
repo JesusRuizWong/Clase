@@ -18,6 +18,9 @@
 
   }  
   
+html{
+  box-sizing: border-box;
+}
 
 /* Botones para seleccionar el tema de pagina */
   .theme-btn {
@@ -273,109 +276,63 @@ body {
 
 
 /* Parametros del contenido */
-.main-content {
-	background: white;
-    
-}
-
-	.main-content header,
-	.main-content .content 
-    {
-        padding-top: 2rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        
-    }
- 
-     .d-content {
-
+.d-content {
            display: flex;
-           flex-wrap: wrap;
            justify-content: center;
-          
+           flex-wrap: wrap;
+
      }
       
-	 
     img {
         max-width: 100%;
         height: auto;
         padding: 1%;
       }
 
-.form {
-    width: 95%;
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}    
-    input {
+/* taps */
+
+#tabs{
+  position: relative;
+}
+
+span.menu {
+  position: fixed;
+  display: none;
+  }
 
 
-        width: 90%;
-        height: 10%;
-        padding: 1rem;
-        border: solid 1px #b3aca7;
+#pnl_1, #pnl_2, #pnl_3{
+  position: absolute;
+  top: 31px;
+  left: 0;
+  border: none;
+  clear: both;
+  overflow: hidden;
 
-        outline: none;
-        transition: all 0.3s ease-in-out;
+}
 
-      }
-      
-      input:hover {
-        background: #e6fffc;
+  #pnl_1  div, #pnl_2  div, #pnl_3  div{
+    opacity: 0;
+    transition: all 0.1s ease;
+    padding: 2%;
+    box-shadow: 1px 1px 3px hsl(208, 11%, 55%);
+    border-radius: 1rem;
+    width: 30%;
+    margin: 2%;
+    min-width: 400px;
+
    
-      }
-      
-      textarea {
-        margin-top: 1%;
-        width: 90%;
-        padding: 1rem;
-        padding-top: 2%;
-        
-        background: transparent;
-        outline: none;
-        
-        color: #363636;
-        
-        border: solid 1px #b3aca7;
-        
-        transition: all 0.3s ease-in-out;
+  }
 
-      }
-      
-      textarea:hover {
-        background: #e6fffc;
-
-      }
-      
-      .submit {
-        width: 50%;
-        max-width: auto;
-        color: rgb(255, 255, 255);
-        background-color: #00AF1C;
-
-        outline:none;
-        cursor: pointer;
-
-
-      }
-      
-      .submit:hover {
-        background: #008d2a;
-      }
-
-
-.article-home{
-    color: #3B06D2;
+#uno:target ~ #pnl_1, #dos:target ~ #pnl_2, #tres:target ~ #pnl_3{
+  position: static;
+  border: 1px solid #ddd;
 }
-.article-servicios{
-    color: #D206B2;
-}
-.article-portafolio{
-    color: #AAD206;
-}
+
+#uno:target ~ #pnl_1  div, #dos:target ~ #pnl_2  div, #tres:target ~ #pnl_3  div{
+    opacity: 1;
+    transition: all 1s ease;
+  }
 
 
 /* Parametros del footer */
