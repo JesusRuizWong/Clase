@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reto1.css">
+    <link rel="stylesheet" href="./practicagrupo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
     <title>Document</title>
 </head>
 <body class="body">
@@ -12,33 +15,65 @@
 	<header class="main-header">
 		
 		<a class="logo-header" href="#">
-			<span class="">LOGO</span>
+			<img src="./logo (1).png">
 		</a> 
 
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Servicios</a></li>
-                <li><a href="#">Portafolio</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li><a style="color: rgb(181, 0, 208);" href="#">Sobre mi</a></li>
+				<li><a style="color: rgb(0, 180, 235);"href="#">Servicios</a></li>
+                <li><a style="color: black"href="#">Servicios</a></li>
+				<li><a style="color: black"href="#">Blog</a></li>
 			</ul>
 		</nav>
 
 	</header>
+    <section class="detalle">
+        <div id="bienvenida">
+            <h1>Hola, Hello</h1>
+            <h2>Soy Sebastian Yabiku </h2>
+            <h3>Front end Developer</h3>   
+            <h4>Gracias por visitar mi pagina, en esta encontraras informacion sobre mi, mi experiencia, 
+                los servicios que ofrezco, algunas cosas de las que me gusta investigar y podras contactarme y contarme sobre ti.</h4>
+            <button id="btn1">Descargar CV</button>
+            <div id="btn2">
+                <a  href="" target="_blank"><img  class="icon" src="./Vector (1).png" alt="icono-linkedin" ></a>
+                <a  href="" target="_blank"><img  class="icon" src="./Vector (2).png" alt="icono-facebook" ></a>
+                <a  href="" target="_blank"><img  class="icon" src="./Vector (3).png" alt="icono-whastapp" ></a>
+                <a  href="" target="_blank"><img  class="icon" src="./Vector (4).png" alt="icono-whastapp" ></a>
+            </div>
+        </div>
+        <div id="img">
+            <img id="img1 " src="./Rectangle 78.png">
+            <img id="img2" src="./Ellipse 1.png" alt="">
+
+        </div>
+        <div id="redes" >
+            <button id="btnr1"><i class="fa fa-check" aria-hidden="true"></i>Me Gusta</button>
+            <button id="btnr2">Compartir</button>
+            <button id="btnr3"><i class="fa fa-twitter" aria-hidden="true"></i>  Tweet</button>
+        </div>
+    </section>
+ </section>
     <section class="main-content">
+        <article class="down" >
+            <div>     <img src="./Vector (5).png" alt="" />  </div>
+             <div>           
+				<h2 class="article-home">Down</h2> </div>    
+          
+
+	
+		</article> 
 		<article>
 			<header>
-				<h1 class="article-home">Home</h1>
+				<h1 class="article-home">Portafolio</h1>
 			</header>
-						
-			<div class="content">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed luctus donec et. Mi, et, volutpat sollicitudin sit sed tincidunt libero ac suscipit. Fermentum mattis cras in massa commodo rhoncus. Metus felis consectetur feugiat diam vel non ut quis. Proin justo amet, tempor viverra sed elementum. Non orci accumsan sed commodo quam blandit ultricies ac aliquam. Nulla euismod tempor consequat id pulvinar in cursus commodo.</p>
-				
-			</div>
+
             <div class="d-content">
-              <img src="./src/Rectangle 2.png" alt="" />
-              <img src="./src/Rectangle 3.png" alt="" />
-              <img src="./src/Rectangle 4.png" alt="" />
+              <img src="./Rectangle 4 (1).png" alt="" />
+              <img src="./Rectangle 6 (1).png" alt="" />
+              <img src="./Rectangle 5 (1).png" alt="" />
+              <img src="./Rectangle 7 (2).png" alt="" />
             </div>
 		</article> 
         <article>
@@ -89,7 +124,7 @@
 		</article> 
         <article>
 			<header>
-				<h1 class="article-contacto">Contacto</h1>
+				<h1 class="article-services">Contacto</h1>
 			</header>
 						
 			<div class="content">
@@ -101,7 +136,7 @@
                 <form class="form" >
                   <input class="form" type="text" placeholder="Nombre y Apellido">
                   <textarea class="form" placeholder="Detalle"></textarea>
-                  <!-- <input class="form" type="datetime-local" > -->
+                  <input class="form" type="datetime-local" >
                   <input class="submit" type="submit" value="GO!">
                 </form>
             </div>
