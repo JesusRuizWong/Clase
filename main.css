@@ -329,7 +329,7 @@ body {
 }  
 
 @keyframes abrirfooter {
-  from{transform: translateY(-100%) ; top: 0px; height:200% ; position: relative; }
+  from{transform: translateY(-100%) ; top: 0px; height:400% ; position: relative; }
   to{  transform: translateY(0%);}
  
 }
