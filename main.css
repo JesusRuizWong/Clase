@@ -13,6 +13,7 @@
     --textcontraste: #ffffff ;
     --text-color:rgb(0, 195, 255) ;
     --sombra: #c9c9c9ce ;
+    --boton: #ff00dd ;
 
   }
    
@@ -126,6 +127,7 @@ body {
   align-items: center;
   border-radius:  0  0 2rem 2rem;
   color: var(--textcontraste);
+
 }
 
 .banner-g{
@@ -134,7 +136,7 @@ body {
 
 
 .banner img{
-  width: 80%;
+  width: 60%;
   border-radius: 2rem;
   animation-name: imagenani ;
   animation-duration: 5s ;
@@ -152,6 +154,7 @@ body {
   color: var(--text-color);
   text-decoration: none;
   color: inherit;
+  margin-bottom: 1rem;
 }
 .banner h1{
   margin-block: 0rem;
@@ -161,36 +164,36 @@ body {
 .banner h2{
   font-size: 2rem;
   width: 100%;
-  margin-block: 1rem;
+  margin-block: 0.6rem;
 }
 .banner h3{
   color: var(--text-color);
   font-size: 2.3rem;
-  margin-block: 2rem;
+  margin-block:  1.2rem;
  
 
 }
 .banner h4{
   width: 80%;
   font-size: 0.8rem;
-  margin-bottom: 1.5rem;
   font-weight: 500;
   text-align: left;
-  padding-left:2rem ;
+  padding-left:1rem ;
   border-left:0.5rem solid var(--text-color);
+  margin-left:0.5rem;
 
 }
 
 .banner button{
   padding: 1rem 3rem;
   color: var(--textcontraste);
-  background-color: #6D0AD3;
+  background-color: var(--boton);
   border: 0rem;
   border-radius: 1rem;
-  margin-top: 1.5rem;
+  margin-block: 1rem;
   width: 50%;
+  margin-left: 22%;
 }
-
 
 .imagen-animada{
     animation-name: imagenani;
@@ -235,12 +238,13 @@ body {
         border-radius: 0.5rem;
         box-shadow: 1px 2px 4px  var(--sombra);
         text-align: center;
-        font-size: 1.3rem;
-        font-weight: 500;
+        font-size: 1.0rem;
+        font-weight: 400;
         color: var(--text-color);
         text-decoration: none;
         color: inherit;
         background-color: var(--base3);
+        transition: all 0.5s;
       }    
 
       
@@ -263,7 +267,7 @@ body {
   width: 400px;        text-decoration: none;
   color: inherit;
   background-color: var(--base3);
-  
+  transition: all 0.5s;
 }
 .content-target-img{
   display: flex;
@@ -279,7 +283,7 @@ body {
    border-radius:  0.5rem 0rem  0rem  0.5rem;
 }
 .content-target h2{
-  color: var(--text-color);
+  color: var(--text2);
   font-size: 1.3rem;
   margin-block: 2rem;
 }
@@ -290,9 +294,6 @@ body {
   font-weight: 500; 
 }
 
-
-
-
 /* Parametros del footer */
 .main-footer {
    	background: var(--base3);
@@ -301,7 +302,9 @@ body {
     display:block;
     justify-content: center;
     border-radius:  2rem  2rem 0rem 0rem;
-
+    animation-name: abrirfooter;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
 }
 	.itemfooter-2 p {
         /* margin-left: 2rem;
@@ -338,8 +341,24 @@ body {
 
     @media only screen and (max-width: 710px) {
         .banner img{  display: none;  }
-        .banner { text-align: center; }  
+        .banner { text-align: center;}  
         .content-section {display: flex; flex-direction: column;   }      
         .content-target { width: 90%; min-width:200px ;  }      
       }
 
+/* animaci0nes */
+.content-target:hover{
+  transform: scale(1.05);
+  color: var(--text-color);
+}  
+
+.d-content-tap:hover{
+  transform: scale(1.05);
+  color: var(--text-color);
+}  
+
+@keyframes abrirfooter {
+  from{transform: translateY(-300px) ; height: 400px; }
+  to{  transform: translateY(0px);height: 200px;}
+ 
+}
