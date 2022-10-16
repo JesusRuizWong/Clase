@@ -276,11 +276,8 @@ body {
         max-width: auto;
         color: rgb(255, 255, 255);
         background-color: #00AF1C;
-
         outline:none;
         cursor: pointer;
-
-
       }
       
       .submit:hover {
