@@ -259,7 +259,6 @@ body {
 .content-target h3{
   color: var(--text);
   font-size: 0.8rem;
-  margin-block: 2rem;
   font-weight: 500; 
 }
 
