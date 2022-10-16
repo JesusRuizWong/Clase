@@ -108,7 +108,7 @@ body {
 
     .logo-header img {
         float: left;
-        margin-left: 2%;
+        margin-left: 1.2rem;
         width: 4rem;
        
     }
@@ -240,6 +240,7 @@ body {
         color: var(--text-color);
         text-decoration: none;
         color: inherit;
+        background-color: var(--base3);
       }    
 
       
@@ -261,6 +262,7 @@ body {
   min-width: 300px; ;
   width: 400px;        text-decoration: none;
   color: inherit;
+  background-color: var(--base3);
   
 }
 .content-target-img{
