@@ -13,7 +13,7 @@
     --textcontraste: #ffffff ;
     --text-color:rgb(0, 195, 255) ;
     --sombra: #c9c9c9ce ;
-    --boton: #ff00dd ;
+    --boton: #00ce29 ;
 
   }
    
@@ -192,6 +192,7 @@ body {
   margin-block: 1rem;
   width: 50%;
   margin-left: 22%;
+  font-weight: 700;
 }
 
 .imagen-animada{

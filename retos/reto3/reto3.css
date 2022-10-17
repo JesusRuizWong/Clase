@@ -286,9 +286,11 @@ textarea{
 
      .section-contacto{ display: flex; flex-wrap:wrap;
         flex-direction: column; 
-        
          align-items: center; }
-     .section-contacto { width:auto; padding-block: 1rem;
+
+     .first-section{ height: 200px; padding-bottom: 40%;
+     }
+     .first-section h3{ top: 50%;  font-size: 2rem; padding: 2%;
  
      }
   
