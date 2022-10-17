@@ -211,7 +211,7 @@ body {
 
 /* Parametros del contenido */
 .main-content{
-  padding-block: 5%;
+  padding-block: 1%;
 }
       
 .content-section{
@@ -220,18 +220,18 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   padding-left: 2% ;
-  margin-block: 5%;
+  margin-block: 2%;
 
 }
 .content-target{
-  margin: 2%;
+  margin: 1%;
   display: flex;
   justify-content:space-around;
   align-items: center;
   border-radius: 0.5rem;
   box-shadow: 1px 2px 4px  var(--sombra);
   min-width: 300px; ;
-  width: 400px;        text-decoration: none;
+  width: 400px;   text-decoration: none;
   color: inherit;
   background-color: var(--base3);
   transition: all 0.5s;
