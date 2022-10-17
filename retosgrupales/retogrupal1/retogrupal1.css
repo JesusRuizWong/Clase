@@ -60,11 +60,30 @@ body {
                     display: block;
                     padding:  5px 5px;
                     text-decoration: none;
+                    transition: all 500ms;
               
                 }
                 
-                    nav ul li a:hover {
-                      
+                nav ul li a:hover {
+                    color: #00cf95;
+                    cursor: pointer;
+                    position: relative;
+                    text-align: center;
+                    padding-bottom: 10px ;
+                    font-size: 14px;
+                }  nav ul li a:hover::before {
+                    transform: translateX(-50%);
+                    border-radius: 100%;
+                    position: absolute;
+                    background: #00cf95;
+                    bottom: 5px;
+                    height: 5px;
+                    content: "";
+                    width: 5px;
+                    left: 54%;
+                }
+                    nav ul li :active {
+                        color:  rgb(204, 0, 255);
                         padding-bottom:0.4rem ;
                         border-bottom: 4px  solid rgb(204, 0, 255);
                     }
@@ -133,6 +152,7 @@ body {
     background-color: #6D0AD3;
     border: none;
     margin-top: 1.5rem;
+    transition: all 500ms;
 }
 
 #btn2{
@@ -140,6 +160,7 @@ body {
     margin-left: 2rem;
     display: flex;
     justify-content: space-around;
+    transition: all 500ms;
 }
 #redes{
     display: block;
@@ -218,15 +239,45 @@ body {
 .d-content {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
-.d-content div {   margin-top:2%; margin-inline: 1%;     margin-bottom: 2rem; }
+.d-content div {   margin-top:2%; margin-inline: 1%;     margin-bottom: 2rem;  }
 
 .d-content div img:hover{
     border:3px solid #00CF95;
     color:#ffffff;
-     
+    transition: all 500ms;
+}
+
+.d-content button:hover{
+    border:1px solid #00CF95;
+    transform: scale(1.05);
+    color:#ffffff;
+    transition: all 500ms;
+}
+.detalle button:hover{
+    border:1px solid #00CF95;
+    transform: scale(1.04);
+    color:#ffffff;
+    transition: all 600ms;
+}
+.detalle img:hover{  
+    transform: scale(1.04);
+    color:#ffffff;
+    transition: all 600ms;
+}
+
+#btn2 img:hover{  
+    transform: scale(1.5);
+    color:#ffffff;
+    transition: all 600ms;
+}
+
+.down img:hover{  
+    transform: scale(1.1);
+    color:#ffffff;
+    transition: all 600ms;
 }
 
 .d-content-dp  {
@@ -263,7 +314,7 @@ body {
      height: 218px ; 
      color: rgb(255, 255, 255);
      border: 4px solid #D1FFA2 ;
-
+     transition: all 500ms;
 }
 
 .services h3 {  background-color:#D1FFA2;
@@ -415,7 +466,7 @@ body {
       input:hover {
         background: #e6fffc;
         border:2px solid #6D0AD3;
-   
+        transition: all 500ms;
       }
       
       textarea {
@@ -429,7 +480,7 @@ body {
       
       textarea:hover {
         background: #e6fffc;
-        border:2px solid #6D0AD3;
+        border:2px solid #6D0AD3;                    transition: all 500ms;
       }
       
       .submit {
@@ -447,7 +498,7 @@ body {
       }
       
       .submit:hover {
-        background: #008d2a;
+        background: #008d2a;                     transition: all 500ms;
       }
 
 
