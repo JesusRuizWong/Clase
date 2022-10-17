@@ -226,6 +226,32 @@ body {
      
 }
 
+.d-content-dp  {
+      position: relative;
+}
+
+
+.d-content-d {
+        background-color: rgba(109, 10, 211, 0.8);
+        padding: 8px;
+        position: absolute;
+        color: #ffff;
+        top: 5%;
+        width: 75%;
+        left: 8%;
+        right: 8%;
+        height:76% ;
+        font-size: 0.7rem;
+    
+}
+.webapp_buttons button {
+      text-align: center;
+      background-color:#D1FFA2;
+      border: 0;
+      border-radius:0.2rem;
+}
+
+
 .services div {  background-color:#00CF95;
      margin-top: 1rem;
      padding-block: 2rem;
