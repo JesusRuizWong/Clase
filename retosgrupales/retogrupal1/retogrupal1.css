@@ -13,11 +13,13 @@ body {
 }
 
 .main-header {
-    height: 99px;
+    height: 80px;
     width: 100%;
     position: fixed;
     top: 0;
+    left: 0;
     color: #363636;
+    background-color: #fffbfb81;
   
 
 }	
@@ -31,19 +33,20 @@ body {
     .logo-header img {
         float: left;
         width: 3rem;
-        padding: 1rem;
+        padding-top: 1rem;
+        margin-left: 5%;
         text-decoration: none;
     }
 
     nav {
         float: right;
-        margin-right: 10rem;
+        margin-right: 5%;
         color: #363636;
   
     }
         nav ul {
             list-style: none;
-            padding-right: 5rem;
+            padding-right: 1rem;
        
         }
         
@@ -54,7 +57,7 @@ body {
                 
                 nav ul li a {
                     display: block;
-                    padding:  5px 2px;
+                    padding:  5px 5gitpx;
                     text-decoration: none;
               
                 }
