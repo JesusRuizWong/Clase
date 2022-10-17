@@ -77,13 +77,14 @@
     flex-direction: column;
     background-color: #9022FF;
     align-items: center;
-    padding: 20px;
+    padding: 2%;
     
 }
 .progression-bar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: 1200px;
+    width: 100%;
 }
 .barrita{
     background-color: #FFFFFF;
@@ -224,7 +225,7 @@
 }
 
 .formContacto{
-    width: 900x;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,13 +234,12 @@
     
 }
 input{
-    width: 363px;
-    height: 59px;
+    width: 40%;
+    height: 15%;
     padding: 1rem;
 }
 
 textarea{
-    display: block;
     width: 100%;
     
 }
@@ -257,13 +257,39 @@ textarea{
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 900px;
+    width: 100%;
 }
 .segundo-grup{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 900px;
+    width: 100%;
 }
 
+@media only screen and (max-width: 710px) {
+    .img-container{ display: flex; flex-wrap:wrap;
+       flex-direction: column; 
+       
+        align-items: center; }
+    .img-container img  { width:auto; padding-block: 1rem;
+
+    }
+
+    .img-container-clientes{ display: flex; flex-wrap:wrap;
+        flex-direction: column; 
+        
+         align-items: center; }
+     .img-container-clientes img  { width:auto; padding-block: 1rem;
+ 
+     }
+
+     .section-contacto{ display: flex; flex-wrap:wrap;
+        flex-direction: column; 
+        
+         align-items: center; }
+     .section-contacto { width:auto; padding-block: 1rem;
+ 
+     }
+  
+  }

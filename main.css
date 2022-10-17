@@ -338,15 +338,5 @@ body {
 
 /* scr0II*/
 *::-webkit-scrollbar {
-  width: 2px;
-}
-
-*::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.407);
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--sombra);
-  border-radius: 2px;
-  border: 1px solid var(--sombra);
+  width: 0px;
 }
