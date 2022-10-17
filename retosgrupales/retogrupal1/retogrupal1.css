@@ -220,6 +220,12 @@ body {
 
 .d-content div {   margin-top:2%; margin-inline: 1%;     margin-bottom: 2rem; }
 
+.d-content div img:hover{
+    border:3px solid #00CF95;
+    color:#ffffff;
+     
+}
+
 .services div {  background-color:#00CF95;
      margin-top: 1rem;
      padding-block: 2rem;
