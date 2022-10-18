@@ -43,8 +43,8 @@ main {
     nav {
         display: flex;
          float: right;
-         margin-right: 1%;
-         font-size: 0.8rem;
+         margin-right: 2%;
+         font-size: 0.95rem;
     }
         nav ul {
 
