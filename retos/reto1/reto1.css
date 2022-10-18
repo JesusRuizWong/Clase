@@ -182,6 +182,7 @@ main {
 	padding: 20px;
     display:flex;
     justify-content: space-between;
+    font-size: 0.8rem;
 }
 	.main-footer p {
 		margin: 0;
