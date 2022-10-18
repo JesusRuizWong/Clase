@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+main{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .first-section{
     background-image: url(./src/image\ 1.png);
     height: 780px;

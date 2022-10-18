@@ -2,6 +2,11 @@ body {
 	margin: 0;
 	padding: 0;
 }
+main{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .header{
     background: url("./src/bg-hero-desktop.svg") #f7ffffe9;
     font-family: 'Poppins', sans-serif;

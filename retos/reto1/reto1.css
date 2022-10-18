@@ -9,11 +9,16 @@ body {
     text-align: justify;
 }
 
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .main-header {
 	background: #00AF1C;
 	color: white;
     height: 99px;
-    width: 100%;
+    width: 1280px;
     position: fixed;
     top: 0;
 

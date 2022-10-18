@@ -1,0 +1,116 @@
+html{
+    box-sizing: border-box;  
+  }
+  
+.body {
+	margin: 0;
+	padding: 15%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+    text-align: justify;   
+    background-color: rgb(243, 243, 243);
+}  
+
+main{width: 90%; display: flex; justify-content: center; flex-direction: column; align-items: center;
+}
+
+.contenedor{
+    display: flex; justify-content: center; flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.mensaje-main{
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.6rem;
+    padding: 3%;
+    width: 70%;
+    margin-block: 0.1rem;
+}
+
+.mensaje-main-d{
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.6rem;
+    padding: 3%;
+    float: right;
+    width: 65%;
+    margin-block: 1rem;
+   
+}
+
+.mensaje-contador{
+     background-color: rgb(243, 243, 243) ;
+     padding: 0.8rem;
+     border-radius: 0.6rem;
+     color: hsl(238, 40%, 52%);
+     font-weight: 700;
+}
+.mensaje-contador-num{
+    margin-block:1rem;
+}
+
+.mensaje{
+    display: flex ;
+    flex-direction: column;
+    margin-inline: 4%;
+}
+
+.mensaje-cabecera{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+}
+
+.mensaje-cabecera-autor{
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.mensaje-cabecera-autor img{
+    width: 30px;
+    margin-right: 10px;
+}
+.mensaje-cabecera-autor-nombre{
+    font-weight: 700;
+}
+.mensaje-cabecera-autor-fecha{
+    font-weight: 200;
+    font-size:0.8rem;
+    margin-inline: 1rem;
+}
+
+.mensaje-cabecera-accion a{
+     text-decoration: none;
+     font-weight: 600;
+     font-size: 0.8rem;
+     margin-inline: 0.2rem;
+}
+
+.mensaje-cabecera-accion img{
+    margin-right: 0.2rem;
+}
+
+.re {  color: hsl(238, 40%, 52%);}
+.ed {  color: hsl(238, 40%, 52%);}
+.de{ color:hsl(358, 79%, 66%)}
+
+
+
+.mensaje-cuerpo{
+    font-weight: 200;
+    font-size:0.8rem;
+ 
+ 
+}
+
+

@@ -10,14 +10,19 @@ body {
 	font-size: 1em;
 	line-height: 1.5em;
     text-align: justify;
+    
+}
+
+main {
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .main-header {
     height: 80px;
-    width: 100%;
+    width: 1280px;
     position: fixed;
     top: 0;
-    left: 0;
     color: #363636;
     background-color: #fffbfb81;
     z-index: 200;
@@ -480,7 +485,7 @@ body {
       
       textarea:hover {
         background: #e6fffc;
-        border:2px solid #6D0AD3;                    transition: all 500ms;
+        border:2px solid #6D0AD3;    transition: all 500ms;
       }
       
       .submit {
@@ -498,7 +503,7 @@ body {
       }
       
       .submit:hover {
-        background: #008d2a;                     transition: all 500ms;
+        background: #008d2a;    transition: all 500ms;
       }
 
 
