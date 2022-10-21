@@ -1,0 +1,14 @@
+:root { 
+    --background-color-banner: linear-gradient(253.6deg, #98D0FC 2.46%, #3481D7 93.24%);
+    --color-text:#1F3F68;
+    --color-title-banner: #FFFFFF; 
+    --color-title-section: #1F3F68;
+    --color-paragraph: #000000; 
+    --color-title-principal-arti: #356EAD;
+    --color-title-article: #1F3F68;
+    --bgfooter: #316099 ;
+    --marginfooter: #dfdfdf;
+    --btnfooter: #5A98D0 ;
+    --textfooter: #ffffff;
+   
+   }
