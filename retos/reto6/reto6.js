@@ -3,11 +3,17 @@ function callMenu(){
         prompt("ingrese el numero de ejercicio que quiere ejecutar: \r\n 1.suma. \r\n 2.Promedio de exmamenes \r\n 3.Calcular el area de un rectangulo \r\n 4.Calcular el area de un triangulo \r\n 5.Calcular el area de una circunferencia \r\n 6.Calcular el sueldo semanal de un trabajador. \r\n 7.Convertir metros a pulgadas \r\n 8.Convertir soles a dolares \r\n 9.Determinar edad de persona \r\n 10.Determinar persona de menor edad. \r\n 11.Determinar bono de trabajador. \r\n 12. Determinar Salaio de 6 años de un profesor. \r\n 13. Determinar aprobados y desaprobados. \r\n 14. Determinar colores foco ingresados. \r\n 15. Determinar edad para votar")
     );
     if(isNaN(nro_ejercicio)){
-        alert ("No seas burro y llena los datso")
+        alert ("Llena los datos requeridos")
     }else{
         MenuEjercicios(nro_ejercicio)
     }
 }
+
+
+
+
+
+
 function MenuEjercicios(nro_ejercicio){
     switch(nro_ejercicio){
         case 1:
@@ -105,7 +111,7 @@ function MenuEjercicios(nro_ejercicio){
 
 function ej1_sumarValores(a,b){
     if(isNaN(a) || isNaN(b)){
-        return "No seas burro y llena los datso";
+        return "Llena los datos";
     } else {
         return a + b
     }
@@ -113,7 +119,7 @@ function ej1_sumarValores(a,b){
 
 function ej2_calcularPromedio(ex1,ex2,ex3,ex4){
     if(isNaN(ex1)|| isNaN(ex2)|| isNaN(ex3)|| isNaN(ex4)){
-        return "No seas burro y llena los datso";
+        return "Llena los datos";
     } else {
         return(ex1 + ex2 + ex3 + ex4)/4;
     }
@@ -122,7 +128,7 @@ function ej2_calcularPromedio(ex1,ex2,ex3,ex4){
 
 function ej3_calcularAreaRectangulo(base_rect,altura_rect){
     if(isNaN(base_rect) || isNaN(altura_rect)){
-        return "No seas burro y llena los datso";
+        return "Llena los datos";
     } else {
         return "el area del rectangulo es :"+base_rect * +altura_rect
     }
@@ -130,7 +136,7 @@ function ej3_calcularAreaRectangulo(base_rect,altura_rect){
 
 function ej4_calcularAreaTriangulo(base_tria, altura_tria){
     if(isNaN(base_tria) || isNaN(altura_tria)){
-        return "No seas burro y llena los datso";
+        return "Llena los datos";
     } 
     else {
         return "El area del triangulo es: "+(base_tria * altura_tria)/2;
@@ -139,7 +145,7 @@ function ej4_calcularAreaTriangulo(base_tria, altura_tria){
 
 function ej5_calcularAreacirculo(radio){
     if(isNaN(radio)){
-        return "No seas burro y llena los datso";
+        return "Llena los datos";
     } 
     else {
         return "El area de la circunferencia es: " + (Math.PI * (radio * radio));
@@ -148,7 +154,7 @@ function ej5_calcularAreacirculo(radio){
 
 function ej6_Salario(salario, horas, dias){
     if(isNaN(salario) || isNaN(horas) || isNaN(dias)){
-        return "No seas burro y llena los datso"
+        return "Llena los datos"
     } 
     else {
         return "salario de la semana es: " + ((salario * horas) * dias);
@@ -157,7 +163,7 @@ function ej6_Salario(salario, horas, dias){
 
 function ej7_PulgadasaMetros(metros){
     if(isNaN(metros)){
-        return "No seas burro y llena los datso"
+        return "Llena los datos"
     } else {
         const pulgadas = 39.3701;
         return "Las pulgadas que necesita es: " + (metros * pulgadas);
@@ -166,7 +172,7 @@ function ej7_PulgadasaMetros(metros){
 
 function ej8_SolaDolar(soles, dolar){
     if(isNaN(soles) || isNaN(dolar)){
-        return "No seas burro y llena los datso"
+        return "Llena los datos"
     } else {
         return "cantidad de soles a dolares es: " + (soles / dolar);
     }
@@ -174,7 +180,7 @@ function ej8_SolaDolar(soles, dolar){
 
 function ej9_edad(año){
     if(isNaN(año)){
-        return "No seas burro y llena los datso"
+        return "Llena los datos"
     } else {
         const añoActual = 2022;
         return "La edad es: " + (añoActual - año) + " años"
@@ -183,7 +189,7 @@ function ej9_edad(año){
 
 function ej10_EdadMenor(nombre1, edad1, nombre2, edad2, nombre3, edad3){
     if(isNaN(nombre1) && isNaN(edad1) || isNaN(nombre2) && isNaN(edad2) || isNaN(nombre3) && isNaN(edad3)){
-        return "No seas burro y llena los datso"
+        return "Llena los datos"
     } else {
         if(edad1 < edad2 && edad1 < edad3){
             return "nombre: " + nombre1 + " edad: " + edad1;
@@ -199,7 +205,7 @@ function ej10_EdadMenor(nombre1, edad1, nombre2, edad2, nombre3, edad3){
 
 function ej11_bono(trabajado){
     if(isNaN(trabajado)){
-        return "No seas burro y llena los datso"
+        return "Llena los datos"
     } else {
         if(trabajado == 1){
             return "recives tu bono de $100";
@@ -228,7 +234,6 @@ function ej12_salarioProfesor (pSalario){
             sal = pSalario * 0.10;
             pSalario=pSalario+sal;
             cantA=("El salario en el año "+p+" es: $"+pSalario);
-
             // Resulto con el prompt no con el return
             prompt(cantA);
         }
@@ -238,7 +243,7 @@ function ej12_salarioProfesor (pSalario){
 
 function ej13_notas(cantN){
     if(isNaN(cantN)){
-        return "No seas burro y llena los datso"
+        return "Llena los datos"
     } else {
         let aprovado = 0;
         let desaprobado = 0;
@@ -257,7 +262,7 @@ function ej13_notas(cantN){
 
 function ej14_Focos(focos){
     if(isNaN(focos)){
-        return "No seas burro y llena los datso"
+        return "Llena los datos"
     }else{
         let rojo = 0;
         let verde = 0;
@@ -282,7 +287,7 @@ function ej14_Focos(focos){
 
 function ej15_votar(votar){
     if(isNaN(votar)){
-        return "No seas burro y llena los datso"
+        return "Llena los datos"
     } else {
         if(votar >= 0 && votar < 18){
             return "Sigue siendo un niño, no puedes votar"
@@ -293,3 +298,83 @@ function ej15_votar(votar){
         }
     }
 }
+
+
+//con ventanas modales jeje
+
+// //Programa que calcula si es suma
+// const calcular=document.getElementById("calcular") ;
+// const valor1=document.getElementById("valor1") ;
+// const valor2=document.getElementById("valor2") ;
+
+
+// calcular.onclick = function() {    
+//     const selectedvalue = document.getElementById("myList").value;
+//     switch(selectedvalue) {
+//         case "1":
+//            const array=document.querySelectorAll('.dynamicInput').value;
+//            console.log('array' , array)
+//         break;
+
+//         case "2":
+     
+//         break;
+
+//         case "3":
+
+//         break;
+
+//         case "4":
+    
+//         break;
+
+//         default:
+//         text = " Seleccione una Opcion ";
+//         }
+        
+// }
+
+
+// let i=0;
+// //esta funcion agregara elementos a demanda dinamicamente
+// addElement.onclick = function(event){
+   
+//     event.preventDefault()
+//     const element = document.getElementById('dynamicContainer');
+//     const newLabel = document.createElement('label');
+//     const newInput = document.createElement('input');
+//     const newa = document.createElement('a');
+//     //agrego la clase deseada
+//     newLabel.className += "col-form-label";
+//     newLabel.innerHTML ="Elemento";
+//     newInput.className += "dynamicInput col-md-3 form-control";
+//     newInput.type ="number";
+//     newInput.id ="value" + ++i;
+//     newa.className +="fa fa-trash m-3"
+//     //agregando el label
+//     element.appendChild(newLabel);
+//     element.appendChild(newa)
+//     element.appendChild(newInput);
+  
+// }
+
+
+ 
+      
+
+//       switch (selectedValue) {
+//         case 1: 
+//          const newLabel = document.createElement('label');
+//          const newInput = document.createElement('input');
+//          //agrego la clase deseada
+//          newLabel.className += "col-form-label";
+//          newLabel.innerHTML ="Sumando 1";
+//          newInput.className += "col-md-3 form-control";
+//          newInput.type ="number";
+//          newInput.id ="valor1";
+//          //agregando el label
+//          element.appendChild(newLabel);
+//          element.appendChild(newInput);
+//          break;
+ 
+// }
